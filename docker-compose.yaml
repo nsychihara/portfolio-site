@@ -1,0 +1,14 @@
+version: "3.9"
+services: 
+  app-static:
+    image: nsychihara/portfolio-exemplo
+    container_name: app_static
+    build: ./public
+    ports:
+      - "8080:80"
+    restart: always
+
+
+    
+
+  
