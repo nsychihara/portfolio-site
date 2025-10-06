@@ -1,38 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <title>Portfólio Exemplo</title>
-    <link rel="stylesheet" href="CSS/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio Teste</title>
+  <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <header>
-        <div class="interface">
-            <nav class="menu-desktop">
-                <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="Competencias.html">Competências</a></li>
-                    <li><a href="#">Projetos</a></li>
-                </ul>
-            </nav>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Meu Portfólio</div>
+      <ul class="nav-links">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#competencias">Competências</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-            <div class="btn-contato">
-                <a href="#">
-                    <button>Contato</button>
-                </a>
-            </div>
-        </div>
-    </header>
-    <section>
-        <div>
-            <h1>A</h1>
-        </div>
-        <div></div>
-        <div></div>
-    </section>
+  <!-- Início -->
+  <section id="inicio" class="section inicio">
+    <div class="intro">
+      <img src="img/minha-foto.jpg" alt="Minha Foto" class="foto-perfil">
+      <div class="texto-intro">
+        <h1>Olá, eu sou [Seu Nome]</h1>
+        <p>Sou desenvolvedor web com foco em criar experiências digitais simples, modernas e funcionais. Bem-vindo ao meu portfólio!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Competências -->
+  <section id="competencias" class="section competencias">
+    <h2>Competências</h2>
+    <ul class="skills">
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>Git & GitHub</li>
+      <li>React (básico)</li>
+    </ul>
+  </section>
+
+  <!-- Projetos -->
+  <section id="projetos" class="section projetos">
+    <h2>Projetos</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Projeto 1</h3>
+        <p>Descrição breve do projeto. Tecnologias usadas e propósito.</p>
+      </div>
+      <div class="card">
+        <h3>Projeto 2</h3>
+        <p>Descrição breve do projeto. Tecnologias usadas e propósito.</p>
+      </div>
+      <div class="card">
+        <h3>Projeto 3</h3>
+        <p>Descrição breve do projeto. Tecnologias usadas e propósito.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="section contato">
+    <h2>Contato</h2>
+    <p>Entre em contato comigo através do e-mail: <strong>seuemail@exemplo.com</strong></p>
+    <div class="social">
+      <a href="#" target="_blank">GitHub</a>
+      <a href="#" target="_blank">LinkedIn</a>
+      <a href="#" target="_blank">Instagram</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 - Desenvolvido por [Seu Nome]</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
