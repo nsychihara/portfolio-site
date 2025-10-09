@@ -1,14 +1,12 @@
 version: "3.9"
-services: 
+services:
   app-static:
-    image: nsychihara/portfolio-exemplo
-    container_name: app_static
-    build: ./public
+    container_name: portfolio-teste
+    image: nginx:alpine
     ports:
-      - "8080:80"
+      - "3000:80"
+    volumes:
+      - ./public:/usr/share/nginx/html:ro
     restart: always
-
-
-    
-
   
+
