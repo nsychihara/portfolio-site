@@ -1,0 +1,37 @@
+.section {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding-top: 120px;
+}
+
+.fotoPerfil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(71, 51, 33, 0.5);
+}
+
+.textoIntro {
+  max-width: 500px;
+  text-align: left;
+}
+
+.textoIntro h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #473321;
+}
+
+.textoIntro p {
+  font-size: 1.1em;
+  color: #473321;
+}

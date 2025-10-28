@@ -1,0 +1,20 @@
+.section {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.section p {
+  margin-bottom: 20px;
+  color: #473321;
+}
+
+.social a {
+  margin: 0 15px;
+  color: #473321;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social a:hover {
+  transform: scale(1.2);
+  color: #7a5d48;
+}

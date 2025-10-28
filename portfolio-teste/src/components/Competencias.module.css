@@ -1,0 +1,24 @@
+.section {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+  font-size: 75px;
+}
+
+.skills li {
+  list-style: none;
+  transition: transform 0.2s;
+}
+
+.skills li:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
