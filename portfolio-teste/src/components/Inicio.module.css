@@ -16,22 +16,26 @@
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  object-fit: cover;
+  background-size: cover;
+  background-position: center;
   box-shadow: 0 0 10px rgba(71, 51, 33, 0.5);
 }
 
+
+
 .textoIntro {
-  max-width: 500px;
+  max-width: 550px;
   text-align: left;
 }
 
 .textoIntro h1 {
-  font-size: 2em;
+  font-size: 2.25em;
   margin-bottom: 10px;
   color: #473321;
 }
 
 .textoIntro p {
-  font-size: 1.1em;
+  font-size: 1.25em;
   color: #473321;
+  text-align: justify;
 }

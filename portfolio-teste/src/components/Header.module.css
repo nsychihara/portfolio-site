@@ -4,6 +4,7 @@
   width: 100%;
   background: #473321;
   color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   z-index: 1000;
 }
 
@@ -11,25 +12,44 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 10%;
+  padding: 18px 10%;
+  letter-spacing: 0.5px;
 }
 
 .logo {
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 1.1rem;
 }
 
 .navLinks {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 30px;
 }
 
 .navLinks a {
   color: #fff;
   text-decoration: none;
-  transition: color 0.3s;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.navLinks a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: #7a5d48;
+  transition: width 0.3s ease;
 }
 
 .navLinks a:hover {
-  color: #7a5d48;
+  color: #d7bfa9;
+}
+
+.navLinks a:hover::after {
+  width: 100%;
 }
