@@ -1,4 +1,4 @@
-import profilePhoto from "@/assets/profile-photo.jpg";
+import profilePhoto from "@/assets/profilePhoto.jpg";
 
 export function Hero() {
   return (
