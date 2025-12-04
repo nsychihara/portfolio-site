@@ -1,0 +1,22 @@
+services:
+  app:
+    build:
+      context: ./portfolio
+      dockerfile: Dockerfile
+    container_name: portfolioReact
+    volumes:
+      - ./portfolio:/app
+      - /app/node_modules
+    ports:
+      - "8080:8080"
+
+  nginx:
+    image: nginx:latest
+    container_name: nginx_portfolio
+    ports:
+      - "8002:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/error.html:/usr/share/nginx/html/error.html:ro
+    depends_on:
+      - app
